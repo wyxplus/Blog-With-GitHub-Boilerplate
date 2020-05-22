@@ -8,12 +8,7 @@ source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
-template = {
-    "name": "Kepler",
-    "type": "git",
-    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
-    "branch": "latest"
-}
+template = "Kepler"
 enable_jsdelivr = {
     "enabled": True,
     "repo": "wyxplus/wyxplus.github.io@master"
@@ -34,11 +29,6 @@ external_links = [
         "name": "Maverick",
         "url": "https://github.com/AlanDecode/Maverick",
         "brief": "🏄‍ Go My Own Way."
-    },
-    {
-        "name": "三無計劃",
-        "url": "https://www.imalan.cn",
-        "brief": "熊猫小A的主页。"
     }
 ]
 nav = [

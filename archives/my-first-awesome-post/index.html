@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/wyxplus/wyxplus.github.io@master/6afb12a4ce4cba4d8517bbdb869c64f3.json"
+            api: "https://cdn.jsdelivr.net/gh/wyxplus/wyxplus.github.io@master/a13317e8040987f3903706fd846ba09e.json"
         }
     </script>
     <script>
@@ -32,18 +32,18 @@
         });
     </script>
     
-<title>数论基础 - 我的个人博客</title>
+<title>我的第一篇文章 - 我的个人博客</title>
 <meta name="author" content="wyx" />
-<meta name="description" content="数论基础" />
-<meta property="og:title" content="数论基础 - 我的个人博客" />
-<meta property="og:description" content="数论基础" />
+<meta name="description" content="Hello World!" />
+<meta property="og:title" content="我的第一篇文章 - 我的个人博客" />
+<meta property="og:description" content="Hello World!" />
 <meta property="og:site_name" content="我的个人博客" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/my-first-awesome-post/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2019-05-22T20:34:00-00.00" />
-<meta name="twitter:title" content="数论基础 - 我的个人博客" />
-<meta name="twitter:description" content="数论基础" />
+<meta name="twitter:title" content="我的第一篇文章 - 我的个人博客" />
+<meta name="twitter:description" content="Hello World!" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -94,7 +94,7 @@
                     
                     <section>
                         
-    <div class=" "><span><a href="/category/测试/">测试</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/my-first-awesome-post/">我的第一篇文章</a></li></ul></div><div class="open "><span><a href="/category/网络安全/">网络安全</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/my-first-awesome-post/">数论基础</a></li></ul></div>
+    <div class=" "><span><a href="/category/网络安全/">网络安全</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/my-first-awesome-post/">数论基础</a></li></ul></div><div class="open "><span><a href="/category/测试/">测试</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/my-first-awesome-post/">我的第一篇文章</a></li></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -109,159 +109,22 @@
                 <div id="content-wrapper">
                     <div id="content">
     <section>
-        <h1 class="post-title">数论基础</h1>
+        <h1 class="post-title">我的第一篇文章</h1>
         <p class="post-meta">
             <time>May 22 2019</time>
             <span class="tags">
                 
                 <span>
-                    <a href="/tag/密码学/">#密码学</a>
+                    <a href="/tag/博客/">#博客</a>
                 </span>
                 
                 <span>
-                    <a href="/tag/数论/">#数论</a>
+                    <a href="/tag/GitHub/">#GitHub</a>
                 </span>
                 
             </span>
         </p>
-        <article class="yue"><h1>数论基础</h1>
-<h2>1. 整除性和带余除法</h2>
-<h3>1.1 整除性性质</h3>
-<ul>
-<li>若 $a|1$，则  $a=\pm1$</li>
-<li>若 $a|b$ 且 $b|a$，则 $a = \pm b$</li>
-<li>任何不等于 0 的整数除 0</li>
-<li>若 $a|b$ 且 $b|c$，则 $a|c$</li>
-</ul>
-<h3>1.2 带余除法</h3>
-<p>$$
-a=qn+r,\ \ \   0 \leqslant r &lt; n; q= \left\lfloor a/n \right\rfloor
-$$</p>
-<h2>2. 欧几里得算法（辗转相除法）</h2>
-<h3>2.1 最大公因子</h3>
-<p>定义：正整数 c 称为 a 和 b 的最大公因子，如果</p>
-<ol>
-<li>c 是 a 和 b 的因子。</li>
-<li>a、b 的因子都是 c 的一个因子。</li>
-</ol>
-<p>$$
-gcd(a,b)=max { k, 满足\ k|a \  且\ k|b }
-$$</p>
-<p>$\because$ 最大公因子必须是正数</p>
-<p>$\therefore$ $gcd(a,b)=gcd(-a,b)=gcd(a,-b)=gcd(-a,-b)$</p>
-<p>即 $gcd(a,b)=gcd(|a|,|b|)$，同样，因为零可以被所有非零整数整除，有 $gcd(a,0)=|a|$</p>
-<h3>2.2 求最大公因子</h3>
-<div class="highlight"><pre><span></span><span class="cm">/* 伪代码：</span>
-<span class="cm"> * 求整数 a 和 b 的最大公因子 d：</span>
-<span class="cm"> * 假定 a &gt;= b &gt; 0</span>
-<span class="cm"> */</span>
-<span class="k">while</span><span class="p">(</span><span class="n">r</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">;</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-<p>证明：</p>
-<h2>3. 模运算</h2>
-<h3>3.1 模</h3>
-<p>定义：设 a 是一个整数，n 是一个正整数，则 a 除以 n 所得的余数为 <strong>a 模 n</strong>。整数 n 称为模数。
-$$
-a = qn+r \Leftrightarrow a = \left\lfloor a/n \right\rfloor\times n+(a \mod n)
-$$
-若 $(a\mod n) = (b\mod n)$，称整数 a 和 b 是模 n <strong>同余</strong> 的，可以表示为 $a\equiv b(mod \ n)$。</p>
-<p>注意到如果 $a \equiv 0(mod \ n)$，那么 $n|a$。</p>
-<h3>3.2 同余的性质</h3>
-<ol>
-<li>若 $n|(a-b)$，则 $a\equiv b(mod \ n)$</li>
-<li>若 $a\equiv b(mod \ n)$，则 $b\equiv a(mod \ n)$</li>
-<li>若$a\equiv b(mod \ n)$，$b\equiv c(mod \ n)$，则$a\equiv c(mod \ n)$</li>
-</ol>
-<h3>3.3 模算术的性质</h3>
-<ol>
-<li>$[(a \mod n)+(a \mod n)] \mod n = (a+b) \mod n$</li>
-<li>$[(a \mod n)-(a \mod n)] \mod n = (a-b) \mod n$</li>
-<li>$[(a \mod n)\times(a \mod n)] \mod n = (a\times b) \mod n$</li>
-</ol>
-<p>注：说明普通运算可以平移到模算术上。</p>
-<h3>3.4 分数求模</h3>
-<p>b、m 互素</p>
-<p>$k \equiv a/b(mod \  m)\Leftrightarrow kb\equiv (mod \  m) $</p>
-<p>e.g. 求 $\frac{1}{3} \mod 11$</p>
-<p>$ x \equiv \frac{1}{3} (\mod 11)$</p>
-<p>$3x \equiv 1 (\mod 11)$</p>
-<p>$3x = 11k + 1, 其中 x,k \in \mathbb{Z}$</p>
-<p>$即 x = \frac{11k+1}{3}$</p>
-<p>解得 $x = 4$，其中 $k=1$</p>
-<p>trick：一般把较小的数作为除数</p>
-<h2>4. 素数</h2>
-<p>整数 $p>1$ 是素数，当且仅当它只有因子 $\pm 1$ 和 $\pm p$。</p>
-<h3>4.1 算术基本定理</h3>
-<p>任意整数 $a>1$ 都可以唯一地因式分解为
-$$
-a = p_1^{a_1} \times p_2^{a_2} \times ...\times p_t^{a_t}
-$$
-式中 $p_1,p_2,...,p_t$ 都是素数，$p_1<p_2< ... <p_t$ ，且所有 $a_i$ 都是正整数。</p>
-<h2>5. 费马（小）定理和欧拉定理</h2>
-<h3>5.1 费马（小）定理</h3>
-<p>形式一：若 p 是素数，a 是正整数且不能被 p 整除（a 与 p 互素），则
-$$
-a^{p-1} \equiv 1(\mod p)
-$$
-形式二：若 p 是素数且 a 是任意正整数，则
-$$
-a^p = a \mod p
-$$
-<strong>证明：</strong></p>
-<p>​   设正整数集合 $\{1, ... , p-1\}%$，用 a 乘以集合中所有元素并对 p 取模，</p>
-<p>​   得集合 $X = \{a\%p, 2a\%p, ..., (p-1)a\%p\}$</p>
-<p>​   $\because$ $p \nmid a$</p>
-<p>​   $\therefore$ X 的元素都不等于 0，且各元素互不相等</p>
-<p>​   不妨设 $ja \equiv ka(\mod p)$，其中 $1 \leqslant j < k \leqslant p-1$</p>
-<p>​   $\because$ a 和 p 互素</p>
-<p>​   $\therefore$  得 $j \equiv k(\mod p)$，但其不成立</p>
-<p>​   $\because$  j 和 k 都是小于 p 的正整数</p>
-<p>​   $\therefore$  X 集合中的 p-1 个元素都是正整数且互不相等，即 X 和 {1, ... , p-1}集合构成相同，只是元素顺序不同</p>
-<p>​将两个集合的所有元素分别相乘，并对结果模 p，有
-$$
-a \times 2a \times ... \times (p-1)a \equiv <a href="\mod p">(1\times 2 \times ... \times (p-1))</a>
-$$</p>
-<p>$$
-a^{p-1}(p-1)! \equiv (p-1)!(\mod p)
-$$</p>
-<h3>5.2 欧拉函数</h3>
-<p>欧拉函数 $\phi(n)$ ：小于 n 且与 n 互素的正整数的个数，习惯上，$\phi(1) = 1$。</p>
-<p>显然，对于素数 p，有
-$$
-\phi(p) = p-1
-$$
-设有两个素数 p 和 q，$p \neq q$，那么对于 $n=pq$，有
-$$
-\phi(n) = \phi(pq) = \phi(p)\times\phi(q)=(p-1)\times(q-1)
-$$
-<strong>证明：</strong></p>
-<p>​   设集合 $\{1,...,(pq-1)\}$，不与 n 互素的集合是 $\{p,2p,...,(q-1)p\}$ 和 $\{q,2q,...,(p-1)q\}$</p>
-<p>​   $\therefore$ $\phi(n) = (pq-1)-[(q-1)+(p-1)] = (p-1)\times(q-1) = \phi(p)\times\phi(q)$</p>
-<h3>5.3 欧拉定理</h3>
-<p>形式一：对于任意互素的 a 和 n，有
-$$
-a^{\phi(n)} \equiv 1 (\mod n)
-$$
-形式二：
-$$
-a^{\phi(n)+1}\equiv a(\mod n)
-$$</p>
-<h2>6. 素性测试 Miller-Rabin 算法</h2>
-
-<pre><code>TEST(n)</code></pre>
-<h2>7. 中国剩余定理</h2>
-<h2>8. 离散对数</h2>
-<h3>8.1 模 n 的整数幂</h3>
-<ul>
-<li>$a（\mod n)$ 的阶</li>
-<li>a 所属的模 n 的指数</li>
-<li>a 所产生的周期长</li>
-</ul>
-</article>
+        <article class="yue"></article>
     </section>
 
     
@@ -270,7 +133,7 @@ $$</p>
             <div class="next">
                 <a class="card" href="/archives/my-first-awesome-post/">
                     <time>May 22 2019</time>
-                    <span>我的第一篇文章</span>
+                    <span>数论基础</span>
                 </a>
             </div>
         

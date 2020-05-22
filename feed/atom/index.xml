@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>我的个人博客</title><updated>2020-05-22T13:07:30.697242+08:06</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/wyxplus/wyxplus.github.io@master/logo.png</logo><subtitle>只坚持一种正义。我的正义。</subtitle><entry><id>/archives/my-first-awesome-post/</id><title>我的第一篇文章</title><updated>2020-05-22T13:07:30.697371+00:00</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><content/><link href="/archives/my-first-awesome-post/" rel="alternate"/><published>2019-05-22T20:34:00+08:06</published></entry><entry><id>/archives/my-first-awesome-post/</id><title>数论基础</title><updated>2020-05-22T13:07:30.697312+00:00</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><content>&lt;h1&gt;数论基础&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>我的个人博客</title><updated>2020-05-22T13:12:57.063148+08:06</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/wyxplus/wyxplus.github.io@master/logo.png</logo><subtitle>只坚持一种正义。我的正义。</subtitle><entry><id>/archives/my-first-awesome-post/</id><title>数论基础</title><updated>2020-05-22T13:12:57.063356+00:00</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><content>&lt;h1&gt;数论基础&lt;/h1&gt;
 &lt;h2&gt;1. 整除性和带余除法&lt;/h2&gt;
 &lt;h3&gt;1.1 整除性性质&lt;/h3&gt;
 &lt;ul&gt;
@@ -96,9 +96,9 @@ $$
 &lt;p&gt;​   $\therefore$  得 $j \equiv k(\mod p)$，但其不成立&lt;/p&gt;
 &lt;p&gt;​   $\because$  j 和 k 都是小于 p 的正整数&lt;/p&gt;
 &lt;p&gt;​   $\therefore$  X 集合中的 p-1 个元素都是正整数且互不相等，即 X 和 {1, ... , p-1}集合构成相同，只是元素顺序不同&lt;/p&gt;
-&lt;p&gt;​将两个集合的所有元素分别相乘，并对结果模 p，有&lt;/p&gt;
-&lt;p&gt;$$
-a \times 2a \times ... \times (p-1)a \equiv &lt;a href="\mod p"&gt;(1\times 2 \times ... \times (p-1))&lt;/a&gt;
+&lt;p&gt;​将两个集合的所有元素分别相乘，并对结果模 p，有
+$$
+a \times 2a \times ... \times (p-1)a \equiv [ (1\times 2 \times ... \times (p-1)) ] (\mod p)
 $$&lt;/p&gt;
 &lt;p&gt;$$
 a^{p-1}(p-1)! \equiv (p-1)!(\mod p)
@@ -136,4 +136,4 @@ $$&lt;/p&gt;
 &lt;li&gt;a 所属的模 n 的指数&lt;/li&gt;
 &lt;li&gt;a 所产生的周期长&lt;/li&gt;
 &lt;/ul&gt;
-</content><link href="/archives/my-first-awesome-post/" rel="alternate"/><published>2019-05-22T20:34:00+08:06</published></entry></feed>
+</content><link href="/archives/my-first-awesome-post/" rel="alternate"/><published>2019-05-22T20:34:00+08:06</published></entry><entry><id>/archives/my-first-awesome-post/</id><title>我的第一篇文章</title><updated>2020-05-22T13:12:57.063261+00:00</updated><author><name>wyx</name><email>wyxplus@gmail.com</email></author><content/><link href="/archives/my-first-awesome-post/" rel="alternate"/><published>2019-05-22T20:34:00+08:06</published></entry></feed>
